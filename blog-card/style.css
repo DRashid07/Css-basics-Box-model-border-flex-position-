@@ -1,0 +1,110 @@
+.main{
+    width: 400px;
+    height: 700px;
+    background-color: mediumturquoise;
+
+}
+
+ body {
+    background: #1ba7de;
+    background: linear-gradient(90deg,rgba(27, 167, 222, 1) 0%, rgba(87, 111, 199, 1) 50%);
+}
+
+.main-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.main-card{
+    width: 400px;
+    height: 700px;
+    background-color:rgb(248, 248, 248);
+    margin: 20px;
+    border-radius: 20px;
+
+    
+}
+
+.card-image{
+    width: 400px;
+    height: 300px;
+}
+
+.card-tag{
+    width: 80px;
+    height: 50px;
+    color:white;
+    background-color: rgb(101, 179, 224);
+    padding: 1px 15px;
+    border-radius: 50px; 
+    border: 50%;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.card-tag p{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+
+.card-header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin:10px;
+    overflow-wrap: break-word;
+}
+
+.card-text{
+    width: 100%;
+    height: 150px;
+    margin: 10px;
+}
+
+.footer-author{
+    width: 40%;
+    height: 20px;
+    text-align: right;
+    
+}
+.footer-date{
+    width: 40%;
+    height: 10px;
+    text-align: right;
+}
+.card-footer{
+    width: 100%;        
+    height: 0px;
+}
+.card-footer-image{
+    display: inline;
+}
+
+.card-footer-image{
+    position: absolute;
+            
+}
+
+.card-footer-image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+   
+}
