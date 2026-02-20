@@ -1,32 +1,201 @@
-.main-card{
-    width: 400px;
-    height: 700px;
-    background-color: mediumturquoise;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.card-header{
-    width: 100%;
-    height: 400px;
-    background: rgb(202, 200, 197);
-}
-
-.header-image img{
-    width: 50%;
-    height: 200px;
-    border-radius: 50%;
-    
-}
-
-.header-text{
-    width: 100%;
-    height: 100px;
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+    width: 400px;
+    background-color: mediumturquoise;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.card-header {
+    width: 100%;
+    background: rgb(202, 200, 197);
+    padding: 40px 30px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.header-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.header-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.header-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-wrap: break-word;
+    gap: 5px;
 }
 
-.header-icon{
-    position: relative;
+.header-text h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.header-text p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 2px 0;
+}
+
+.header-text p:first-of-type {
+    color: #95a5a6;
+    font-weight: 500;
+}
+
+.header-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.header-icon i {
+    font-size: 32px;
+    color: mediumturquoise;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.header-icon i:hover {
+    transform: rotate(90deg);
+    color: #48d1cc;
+}
+
+.card-desc {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    background-color: mediumturquoise;
+}
+
+.shots,
+.following,
+.followers {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.shots span,
+.following span,
+.followers span {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.shots p,
+.following p,
+.followers p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-dm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    background-color: mediumturquoise;
+}
+
+.card-dm button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.send.message {
+    background-color: white;
+    color: mediumturquoise;
+}
+
+.send.message:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.more {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.more:hover {
+    background-color: white;
+    color: mediumturquoise;
+    transform: translateY(-2px);
+}
+
+.more i {
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .main-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    .card-desc {
+        padding: 20px 10px;
+    }
+
+    .shots span,
+    .following span,
+    .followers span {
+        font-size: 24px;
+    }
 }
